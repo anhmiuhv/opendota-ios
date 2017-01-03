@@ -1,4 +1,4 @@
-# opendota-iso
+# opendota-ios
 
 iOs app for opendota
 
