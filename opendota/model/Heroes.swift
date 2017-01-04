@@ -9,6 +9,8 @@
 import Foundation
 import Gloss
 
+
+
 class Heroes {
     static let info = Heroes()
     var list: [Hero] = []
@@ -31,6 +33,10 @@ class Heroes {
     }
 
     static func getImageIconName(using id: Int) -> String{
+        if id <= 0 || id >= info.list.count {
+            return ""
+        }
+
         let id = id > 23 ? id - 2 : id - 1
         return info.list[id].imageName
     }

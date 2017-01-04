@@ -137,6 +137,7 @@
 		BD76429C1E1B530F00A6DFA2 /* faceless_void_full.png in Resources */ = {isa = PBXBuildFile; fileRef = BD76422B1E1B530F00A6DFA2 /* faceless_void_full.png */; };
 		BD76429D1E1B530F00A6DFA2 /* slardar_full.png in Resources */ = {isa = PBXBuildFile; fileRef = BD76422C1E1B530F00A6DFA2 /* slardar_full.png */; };
 		BD76429F1E1B57C000A6DFA2 /* MatchInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76429E1E1B57C000A6DFA2 /* MatchInfo.swift */; };
+		BD7642A11E1C88E700A6DFA2 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7642A01E1C88E700A6DFA2 /* ProfileCell.swift */; };
 		BDC0A3751E1ADF1500098194 /* MatchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0A3741E1ADF1500098194 /* MatchFilter.swift */; };
 		D3D8750F6108E1284CAB9BF7 /* Pods_opendota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68140A27FF1B8229F2B91D7F /* Pods_opendota.framework */; };
 /* End PBXBuildFile section */
@@ -301,6 +302,7 @@
 		BD76422B1E1B530F00A6DFA2 /* faceless_void_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = faceless_void_full.png; path = image/faceless_void_full.png; sourceTree = "<group>"; };
 		BD76422C1E1B530F00A6DFA2 /* slardar_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slardar_full.png; path = image/slardar_full.png; sourceTree = "<group>"; };
 		BD76429E1E1B57C000A6DFA2 /* MatchInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchInfo.swift; path = model/MatchInfo.swift; sourceTree = "<group>"; };
+		BD7642A01E1C88E700A6DFA2 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileCell.swift; path = view/ProfileCell.swift; sourceTree = "<group>"; };
 		BDC0A3741E1ADF1500098194 /* MatchFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchFilter.swift; path = model/MatchFilter.swift; sourceTree = "<group>"; };
 		D67EA09DFC88ED462A91FC9A /* Pods_opendotaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opendotaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -429,6 +431,7 @@
 			isa = PBXGroup;
 			children = (
 				BD7641B71E1B3A3600A6DFA2 /* MatchInfoCell.swift */,
+				BD7642A01E1C88E700A6DFA2 /* ProfileCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -964,6 +967,7 @@
 				BDC0A3751E1ADF1500098194 /* MatchFilter.swift in Sources */,
 				BD6E65521E19762E00A2DB7F /* MatchViewController.swift in Sources */,
 				BD6E65811E1990C400A2DB7F /* Match.swift in Sources */,
+				BD7642A11E1C88E700A6DFA2 /* ProfileCell.swift in Sources */,
 				BD6E657E1E198FF100A2DB7F /* User.swift in Sources */,
 				BD6E65831E1991C300A2DB7F /* Player.swift in Sources */,
 				BD6E65501E19762E00A2DB7F /* AppDelegate.swift in Sources */,
@@ -1120,7 +1124,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7169AE69D96E4A4234AF191 /* Pods-opendota.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = opendota/Info.plist;
@@ -1135,7 +1139,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EDBAC31C36DC9AE0E66D073 /* Pods-opendota.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = opendota/Info.plist;
@@ -1150,7 +1154,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51C17EEF8D2FB45A9BA346D6 /* Pods-opendotaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = opendotaTests/Info.plist;
@@ -1166,7 +1170,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 477688DDEE8C78C7F5A6AD52 /* Pods-opendotaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = opendotaTests/Info.plist;
@@ -1182,7 +1186,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4FD953101BB835945A8E730 /* Pods-opendotaUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = opendotaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1197,7 +1201,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9E5E037A2182394D5A9A21B0 /* Pods-opendotaUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = UD49P337VQ;
 				INFOPLIST_FILE = opendotaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

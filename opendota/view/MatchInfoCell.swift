@@ -63,9 +63,11 @@ class MatchInfoCell: UITableViewCell {
                 self.mode.text = "Unknown"
             }
         }
+        
         let name = Heroes.getImageIconName(using: Int(info.playerHeroID!))
         let imageIcon = UIImage(named: name)
         heroIcon.image = imageIcon
+
 
     }
 
