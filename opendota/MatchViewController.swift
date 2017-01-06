@@ -13,6 +13,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
 
     let heroes = Heroes.info
     var player: Player?
+    var id: Int64 = 191771962
     var matches: [MatchInfo] = []
     var receiveWinLose = false
     var receiveMMR = false
@@ -30,7 +31,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
 
         // Do any additional setup after loading the view, typically from a nib.
         debugPrint(heroes.list.count)
-        self.player = Player(id: 146770345)
+        self.player = Player(id: self.id)
         player!.getAllMatches {
             matches in
             self.matches = matches

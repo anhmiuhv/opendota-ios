@@ -33,7 +33,7 @@ class Heroes {
     }
 
     static func getImageIconName(using id: Int) -> String{
-        if id <= 0 || id >= info.list.count {
+        if id <= 0 || id > info.list.count + 1 {
             return ""
         }
 
