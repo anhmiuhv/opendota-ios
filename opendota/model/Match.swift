@@ -8,10 +8,31 @@
 
 import Foundation
 import Gloss
+import Alamofire
 
 class Match {
-    let info: MatchInfo
-    init (info: MatchInfo){
-        self.info = info
+    let info: MatchInfo? = nil
+    let id: Int64
+    init (){
+        self.id = 2857204600
+
     }
+
+    var players: [InMatchPlayer]?
+
+    func getMatchInfo(completion: @escaping () -> Void){
+        Alamofire.request("https://api.opendota.com/api/matches/\(id)", method: .get).responseJSON {
+            response in
+
+            if let json = response.result.value as? JSON{
+                self.players = "players" <~~ json
+                completion()
+
+            }
+
+        }
+
+    }
+
+    
 }
