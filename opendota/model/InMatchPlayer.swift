@@ -29,6 +29,17 @@ struct InMatchPlayer: Decodable {
     let sen_placed: Int?
     let total_gold: Int?
     let tower_kills: Int?
+    let item_1: Int?
+    let item_2: Int?
+    let item_3: Int?
+    let item_4: Int?
+    let item_5: Int?
+    let item_6: Int?
+    let backpack_0: Int?
+    let backpack_1: Int?
+    let backpack_2: Int?    
+    
+    
 
     init (json: JSON) {
         self.id = "account_id" <~~ json
@@ -50,6 +61,15 @@ struct InMatchPlayer: Decodable {
         self.tower_kills = "tower_kills" <~~ json
         self.total_gold = "total_gold" <~~ json
         self.personaname = "personaname" <~~ json
+        self.item_1 = "item_1" <~~ json
+        self.item_2 = "item_2" <~~ json
+        self.item_3 = "item_3" <~~ json
+        self.item_4 = "item_4" <~~ json
+        self.item_5 = "item_5" <~~ json
+        self.item_6 = "item_6" <~~ json
+        self.backpack_0 = "backpack_0" <~~ json
+        self.backpack_1 = "backpack_1" <~~ json
+        self.backpack_2 = "backpack_2" <~~ json
     }
 
 

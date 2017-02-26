@@ -140,6 +140,8 @@
 		BD7642A11E1C88E700A6DFA2 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7642A01E1C88E700A6DFA2 /* ProfileCell.swift */; };
 		BD7E39691E39A1220089F201 /* InMatchPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E39681E39A1220089F201 /* InMatchPlayer.swift */; };
 		BD7E396D1E39AE7E0089F201 /* MatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E396C1E39AE7E0089F201 /* MatchTest.swift */; };
+		BDA6EC751E3B1FD700F33040 /* list_items.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDA6EC731E3B1FD700F33040 /* list_items.txt */; };
+		BDA6EC761E3B1FD700F33040 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BDA6EC741E3B1FD700F33040 /* items.json */; };
 		BDBA2E8C1E39BFB70059AF66 /* glimmer_cape_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2DE91E39BFB60059AF66 /* glimmer_cape_lg.png */; };
 		BDBA2E8D1E39BFB70059AF66 /* heavens_halberd_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2DEA1E39BFB60059AF66 /* heavens_halberd_lg.png */; };
 		BDBA2E8E1E39BFB70059AF66 /* slippers_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2DEB1E39BFB60059AF66 /* slippers_lg.png */; };
@@ -300,9 +302,7 @@
 		BDBA2F291E39BFB70059AF66 /* courier_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2E861E39BFB70059AF66 /* courier_lg.png */; };
 		BDBA2F2A1E39BFB70059AF66 /* greater_crit_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2E871E39BFB70059AF66 /* greater_crit_lg.png */; };
 		BDBA2F2B1E39BFB70059AF66 /* soul_booster_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2E881E39BFB70059AF66 /* soul_booster_lg.png */; };
-		BDBA2F311E39C0450059AF66 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2F301E39C0450059AF66 /* items.json */; };
 		BDBA2F331E39C0CC0059AF66 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA2F321E39C0CC0059AF66 /* Items.swift */; };
-		BDBA2F351E39C2B50059AF66 /* list_items.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2F341E39C2B50059AF66 /* list_items.txt */; };
 		BDBA2F391E39C6CD0059AF66 /* ItemsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBA2F381E39C6CD0059AF66 /* ItemsTest.swift */; };
 		BDC0A3751E1ADF1500098194 /* MatchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0A3741E1ADF1500098194 /* MatchFilter.swift */; };
 		BDCF53A21E1D6A6B0009C148 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF53A11E1D6A6B0009C148 /* LoginViewController.swift */; };
@@ -474,6 +474,8 @@
 		BD7642A01E1C88E700A6DFA2 /* ProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileCell.swift; path = view/ProfileCell.swift; sourceTree = "<group>"; };
 		BD7E39681E39A1220089F201 /* InMatchPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InMatchPlayer.swift; path = model/InMatchPlayer.swift; sourceTree = "<group>"; };
 		BD7E396C1E39AE7E0089F201 /* MatchTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTest.swift; sourceTree = "<group>"; };
+		BDA6EC731E3B1FD700F33040 /* list_items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = list_items.txt; path = data/list_items.txt; sourceTree = "<group>"; };
+		BDA6EC741E3B1FD700F33040 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = items.json; path = data/items.json; sourceTree = "<group>"; };
 		BDBA2DE91E39BFB60059AF66 /* glimmer_cape_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glimmer_cape_lg.png; path = item_image/glimmer_cape_lg.png; sourceTree = "<group>"; };
 		BDBA2DEA1E39BFB60059AF66 /* heavens_halberd_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heavens_halberd_lg.png; path = item_image/heavens_halberd_lg.png; sourceTree = "<group>"; };
 		BDBA2DEB1E39BFB60059AF66 /* slippers_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slippers_lg.png; path = item_image/slippers_lg.png; sourceTree = "<group>"; };
@@ -634,9 +636,7 @@
 		BDBA2E861E39BFB70059AF66 /* courier_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = courier_lg.png; path = item_image/courier_lg.png; sourceTree = "<group>"; };
 		BDBA2E871E39BFB70059AF66 /* greater_crit_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greater_crit_lg.png; path = item_image/greater_crit_lg.png; sourceTree = "<group>"; };
 		BDBA2E881E39BFB70059AF66 /* soul_booster_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soul_booster_lg.png; path = item_image/soul_booster_lg.png; sourceTree = "<group>"; };
-		BDBA2F301E39C0450059AF66 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = items.json; path = ../../../image/items.json; sourceTree = "<group>"; };
 		BDBA2F321E39C0CC0059AF66 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Items.swift; path = model/Items.swift; sourceTree = "<group>"; };
-		BDBA2F341E39C2B50059AF66 /* list_items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = list_items.txt; path = ../../../image/list_items.txt; sourceTree = "<group>"; };
 		BDBA2F381E39C6CD0059AF66 /* ItemsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTest.swift; sourceTree = "<group>"; };
 		BDC0A3741E1ADF1500098194 /* MatchFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchFilter.swift; path = model/MatchFilter.swift; sourceTree = "<group>"; };
 		BDCF53A11E1D6A6B0009C148 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -767,8 +767,8 @@
 		BD6E65881E199D8100A2DB7F /* data */ = {
 			isa = PBXGroup;
 			children = (
-				BDBA2F341E39C2B50059AF66 /* list_items.txt */,
-				BDBA2F301E39C0450059AF66 /* items.json */,
+				BDA6EC731E3B1FD700F33040 /* list_items.txt */,
+				BDA6EC741E3B1FD700F33040 /* items.json */,
 				BD6E65861E199D7A00A2DB7F /* heroes.json */,
 			);
 			name = data;
@@ -1158,7 +1158,7 @@
 				TargetAttributes = {
 					BD6E654B1E19762E00A2DB7F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UD49P337VQ;
+						DevelopmentTeam = HSAYDGFEVC;
 						ProvisioningStyle = Automatic;
 					};
 					BD6E655F1E19762F00A2DB7F = {
@@ -1370,6 +1370,7 @@
 				BDBA2EB01E39BFB70059AF66 /* necronomicon_2_lg.png in Resources */,
 				BDBA2EED1E39BFB70059AF66 /* magic_wand_lg.png in Resources */,
 				BDBA2EC61E39BFB70059AF66 /* power_treads_lg.png in Resources */,
+				BDA6EC761E3B1FD700F33040 /* items.json in Resources */,
 				BDBA2ED91E39BFB70059AF66 /* clarity_lg.png in Resources */,
 				BDBA2EC41E39BFB70059AF66 /* phase_boots_lg.png in Resources */,
 				BD7642751E1B530F00A6DFA2 /* razor_full.png in Resources */,
@@ -1406,7 +1407,6 @@
 				BD76426C1E1B530F00A6DFA2 /* oracle_full.png in Resources */,
 				BD7642551E1B530F00A6DFA2 /* legion_commander_full.png in Resources */,
 				BD7642731E1B530F00A6DFA2 /* queenofpain_full.png in Resources */,
-				BDBA2F311E39C0450059AF66 /* items.json in Resources */,
 				BDBA2F171E39BFB70059AF66 /* mystic_staff_lg.png in Resources */,
 				BDBA2ED21E39BFB70059AF66 /* oblivion_staff_lg.png in Resources */,
 				BDBA2E9E1E39BFB70059AF66 /* ancient_janggo_lg.png in Resources */,
@@ -1443,7 +1443,6 @@
 				BD6E65551E19762F00A2DB7F /* Main.storyboard in Resources */,
 				BD7642651E1B530F00A6DFA2 /* necrolyte_full.png in Resources */,
 				BD7642961E1B530F00A6DFA2 /* windrunner_full.png in Resources */,
-				BDBA2F351E39C2B50059AF66 /* list_items.txt in Resources */,
 				BDBA2EEB1E39BFB70059AF66 /* gem_lg.png in Resources */,
 				BDBA2EE51E39BFB70059AF66 /* tpscroll_lg.png in Resources */,
 				BDBA2EEE1E39BFB70059AF66 /* mithril_hammer_lg.png in Resources */,
@@ -1459,6 +1458,7 @@
 				BDBA2EE31E39BFB70059AF66 /* solar_crest_lg.png in Resources */,
 				BDBA2EAC1E39BFB70059AF66 /* veil_of_discord_lg.png in Resources */,
 				BDBA2F221E39BFB70059AF66 /* orb_of_venom_lg.png in Resources */,
+				BDA6EC751E3B1FD700F33040 /* list_items.txt in Resources */,
 				BD7642941E1B530F00A6DFA2 /* warlock_full.png in Resources */,
 				BD7642391E1B530F00A6DFA2 /* bristleback_full.png in Resources */,
 				BDBA2EFF1E39BFB70059AF66 /* pers_lg.png in Resources */,
@@ -1810,7 +1810,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UD49P337VQ;
+				DEVELOPMENT_TEAM = HSAYDGFEVC;
 				INFOPLIST_FILE = opendota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.opendota;
@@ -1825,7 +1825,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UD49P337VQ;
+				DEVELOPMENT_TEAM = HSAYDGFEVC;
 				INFOPLIST_FILE = opendota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lthoang.wpi.com.opendota;

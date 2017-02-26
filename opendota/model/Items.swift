@@ -9,7 +9,7 @@
 import Foundation
 
 //
-//  Heroes.swift
+//  Items.swift
 //  opendota
 //
 //  Created by Linh Hoang on 1/1/17.
