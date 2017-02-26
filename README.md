@@ -6,4 +6,4 @@ iOs app for opendota
 
 * Show your profiles, winrate, and MMR
 
-![alt tag](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt tag](https://raw.githubusercontent.com/anhmiuhv/opendota-ios/master/IMG_1118.PNG)
