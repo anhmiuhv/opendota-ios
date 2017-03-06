@@ -45,6 +45,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
                                                   length: (url.characters.count))).count != 0 {
             let range = url.range(of: "/", options: .backwards)!
             self.playerid = Int64(url.substring(from: range.upperBound))!
+
             self.performSegue(withIdentifier: "getID", sender: nil)
         }
     }
@@ -53,6 +54,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
         if segue.identifier == "getID"{
             if let viewcontroller = segue.destination as? MatchViewController {
                 viewcontroller.id = playerid
+                UserDefaults.standard.set(self.playerid, forKey: "name_preference")
             }
         }
     }

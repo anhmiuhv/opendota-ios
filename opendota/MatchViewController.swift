@@ -171,7 +171,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
                 }
                 count += 1
             }
-        } else if currentPage == lastPage {
+        } else if currentPage == lastPage || currentPage == lastPage - 1 {
             var count = lastPage - 2
             for b in buttons {
                 let title = String(count)

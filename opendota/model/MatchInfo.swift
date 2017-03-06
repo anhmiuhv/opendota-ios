@@ -13,7 +13,7 @@ struct MatchInfo: Decodable {
     let id: Int64?
     let playerSlot: Int?
     let radiantWin: Bool?
-    let duration: String?
+    let duration: Int?
     let gameMode: Int?
     let lobbyType: Int?
     let playerHeroID: Int64?

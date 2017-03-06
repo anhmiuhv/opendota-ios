@@ -16,8 +16,9 @@ class MatchInfoCell: UITableViewCell {
     @IBOutlet weak var death: UILabel!
     @IBOutlet weak var assist: UILabel!
     @IBOutlet weak var kda: KDAindicator!
-
+    @IBOutlet weak var duration: UILabel!
     @IBOutlet weak var mode: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -40,7 +41,7 @@ class MatchInfoCell: UITableViewCell {
         kill.text = String(info.kill!)
         death.text = String(info.death!)
         assist.text = String(info.assist!)
-
+        duration.text = Int.toTime(number: info.duration!)
         kda.kill = Double(info.kill!)
         kda.death = Double(info.death!)
         kda.assist = Double(info.assist!)
