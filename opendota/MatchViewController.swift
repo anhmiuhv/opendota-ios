@@ -10,7 +10,7 @@ import UIKit
 
 class MatchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var table: UITableView!
-
+    var c = 0
     let heroes = Heroes.info
     var player: Player?
     var id: Int64 = 191771962
@@ -21,6 +21,10 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     var lastPage: Int {
         return Int(ceil(Double(matches.count) / 10))
     }
+
+    var swipeGestureRecognizer: UIScreenEdgePanGestureRecognizer?
+    let swipeInteractionController = SlideInController()
+    let slideinAnimator = SlideInAnimator()
 
     @IBOutlet weak var pagebutton: UIStackView!
     @IBOutlet weak var thirdButton: UIButton!
@@ -58,6 +62,8 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
             self.receiveMMR = true
             self.table.reloadRows(at: [IndexPath(row: 0, section: 0)], with: .none)
         }
+        swipeInteractionController.wireToViewController(viewController: self)
+
 
     }
 
@@ -192,5 +198,27 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.table.reloadData()
     }
 
+    func showSecondViewController() {
+        self.performSegue(withIdentifier: "option", sender: self)
+    }
+
+    @IBAction func returnToMatches(unwindSegue: UIStoryboardSegue){
+        unwindSegue.source.transitioningDelegate = unwindSegue.source as? UIViewControllerTransitioningDelegate
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segue.destination.transitioningDelegate = self
+    }
+
+
 }
 
+extension MatchViewController: UIViewControllerTransitioningDelegate {
+    func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return self.swipeInteractionController.interactionInProgress ? swipeInteractionController : nil
+    }
+
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return self.slideinAnimator
+    }
+}

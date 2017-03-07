@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C39FF87AC7EDF47E31156E9 /* Pods_opendotaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67EA09DFC88ED462A91FC9A /* Pods_opendotaUITests.framework */; };
 		38D68A0685858112B8F5021D /* Pods_opendotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9954ADC5D9E1A585041AE8D /* Pods_opendotaTests.framework */; };
+		BD02E7031E6D3FE300E5103A /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02E7021E6D3FE300E5103A /* OptionViewController.swift */; };
 		BD0A01E21E6CBA750007ECFD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD0A01E11E6CBA740007ECFD /* Settings.bundle */; };
 		BD6E65501E19762E00A2DB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E654F1E19762E00A2DB7F /* AppDelegate.swift */; };
 		BD6E65521E19762E00A2DB7F /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E65511E19762E00A2DB7F /* MatchViewController.swift */; };
@@ -142,6 +143,9 @@
 		BD76DFE11E6CE25E0041F80A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76DFE01E6CE25E0041F80A /* Utility.swift */; };
 		BD7E39691E39A1220089F201 /* InMatchPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E39681E39A1220089F201 /* InMatchPlayer.swift */; };
 		BD7E396D1E39AE7E0089F201 /* MatchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7E396C1E39AE7E0089F201 /* MatchTest.swift */; };
+		BD8B82721E6E5B3700842D3C /* SlideInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B82711E6E5B3700842D3C /* SlideInController.swift */; };
+		BD8B82751E6E6B9C00842D3C /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B82741E6E6B9C00842D3C /* SlideInAnimator.swift */; };
+		BD8B82771E6F5CB500842D3C /* SlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B82761E6F5CB500842D3C /* SlideOutAnimator.swift */; };
 		BDA6EC751E3B1FD700F33040 /* list_items.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDA6EC731E3B1FD700F33040 /* list_items.txt */; };
 		BDA6EC761E3B1FD700F33040 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BDA6EC741E3B1FD700F33040 /* items.json */; };
 		BDBA2E8C1E39BFB70059AF66 /* glimmer_cape_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2DE91E39BFB60059AF66 /* glimmer_cape_lg.png */; };
@@ -339,6 +343,7 @@
 		A7169AE69D96E4A4234AF191 /* Pods-opendota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opendota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opendota/Pods-opendota.debug.xcconfig"; sourceTree = "<group>"; };
 		B4FD953101BB835945A8E730 /* Pods-opendotaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opendotaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opendotaUITests/Pods-opendotaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9954ADC5D9E1A585041AE8D /* Pods_opendotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opendotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD02E7021E6D3FE300E5103A /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		BD0A01E11E6CBA740007ECFD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BD6E654C1E19762E00A2DB7F /* opendota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opendota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6E654F1E19762E00A2DB7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -478,6 +483,9 @@
 		BD76DFE01E6CE25E0041F80A /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		BD7E39681E39A1220089F201 /* InMatchPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InMatchPlayer.swift; path = model/InMatchPlayer.swift; sourceTree = "<group>"; };
 		BD7E396C1E39AE7E0089F201 /* MatchTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTest.swift; sourceTree = "<group>"; };
+		BD8B82711E6E5B3700842D3C /* SlideInController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInController.swift; path = segue/SlideInController.swift; sourceTree = "<group>"; };
+		BD8B82741E6E6B9C00842D3C /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInAnimator.swift; path = segue/SlideInAnimator.swift; sourceTree = "<group>"; };
+		BD8B82761E6F5CB500842D3C /* SlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimator.swift; sourceTree = "<group>"; };
 		BDA6EC731E3B1FD700F33040 /* list_items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = list_items.txt; path = data/list_items.txt; sourceTree = "<group>"; };
 		BDA6EC741E3B1FD700F33040 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = items.json; path = data/items.json; sourceTree = "<group>"; };
 		BDBA2DE91E39BFB60059AF66 /* glimmer_cape_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glimmer_cape_lg.png; path = item_image/glimmer_cape_lg.png; sourceTree = "<group>"; };
@@ -715,6 +723,7 @@
 		BD6E654E1E19762E00A2DB7F /* opendota */ = {
 			isa = PBXGroup;
 			children = (
+				BD8B82731E6E6B7600842D3C /* animator */,
 				BDBA2F2F1E39BFBC0059AF66 /* item_image */,
 				BD7641BB1E1B530400A6DFA2 /* image */,
 				BD7641B61E1B39D700A6DFA2 /* view */,
@@ -730,6 +739,7 @@
 				BDCF53A11E1D6A6B0009C148 /* LoginViewController.swift */,
 				BDCF53A31E1D6B5B0009C148 /* WebViewController.swift */,
 				BD76DFE01E6CE25E0041F80A /* Utility.swift */,
+				BD02E7021E6D3FE300E5103A /* OptionViewController.swift */,
 			);
 			path = opendota;
 			sourceTree = "<group>";
@@ -908,6 +918,16 @@
 				BD76422C1E1B530F00A6DFA2 /* slardar_full.png */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		BD8B82731E6E6B7600842D3C /* animator */ = {
+			isa = PBXGroup;
+			children = (
+				BD8B82711E6E5B3700842D3C /* SlideInController.swift */,
+				BD8B82741E6E6B9C00842D3C /* SlideInAnimator.swift */,
+				BD8B82761E6F5CB500842D3C /* SlideOutAnimator.swift */,
+			);
+			name = animator;
 			sourceTree = "<group>";
 		};
 		BDBA2F2F1E39BFBC0059AF66 /* item_image */ = {
@@ -1100,6 +1120,7 @@
 				BD6E654A1E19762E00A2DB7F /* Resources */,
 				C08CD8945586C7A0AC7003E3 /* [CP] Embed Pods Frameworks */,
 				C3F543D50FEAC0FDBAA9EAE3 /* [CP] Copy Pods Resources */,
+				BD8B82661E6E358E00842D3C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1581,6 +1602,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		BD8B82661E6E358E00842D3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd ~/Documents/ios/opendota\nxattr -cr .";
+		};
 		C08CD8945586C7A0AC7003E3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1650,8 +1684,10 @@
 			files = (
 				BDCF53A21E1D6A6B0009C148 /* LoginViewController.swift in Sources */,
 				BDC0A3751E1ADF1500098194 /* MatchFilter.swift in Sources */,
+				BD8B82771E6F5CB500842D3C /* SlideOutAnimator.swift in Sources */,
 				BD6E65521E19762E00A2DB7F /* MatchViewController.swift in Sources */,
 				BD6E65811E1990C400A2DB7F /* Match.swift in Sources */,
+				BD02E7031E6D3FE300E5103A /* OptionViewController.swift in Sources */,
 				BD7642A11E1C88E700A6DFA2 /* ProfileCell.swift in Sources */,
 				BD6E657E1E198FF100A2DB7F /* User.swift in Sources */,
 				BD6E65831E1991C300A2DB7F /* Player.swift in Sources */,
@@ -1662,9 +1698,11 @@
 				BDCF53A81E1DBCB10009C148 /* KDAindicator.swift in Sources */,
 				BD7641B81E1B3A3600A6DFA2 /* MatchInfoCell.swift in Sources */,
 				BDCF53A41E1D6B5B0009C148 /* WebViewController.swift in Sources */,
+				BD8B82721E6E5B3700842D3C /* SlideInController.swift in Sources */,
 				BD7E39691E39A1220089F201 /* InMatchPlayer.swift in Sources */,
 				BD7641BA1E1B457800A6DFA2 /* Constants.swift in Sources */,
 				BD76DFE11E6CE25E0041F80A /* Utility.swift in Sources */,
+				BD8B82751E6E6B9C00842D3C /* SlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

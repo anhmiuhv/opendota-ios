@@ -16,7 +16,7 @@ extension Int {
         var count = 0
         for i in s.characters {
             f += String(i)
-            if count > 0 && count % 2 == 1 && count != max {
+            if count > 0 && count % 2 == 1 && count != max - 1 {
                 f += ":"
             }
             count += 1
