@@ -28,4 +28,12 @@ extension Int {
         let g: Float = Float(number) / 1000.0
         return String(format: "%.1fk", g)
     }
+
+    static func toDamage(number: Int) -> String {
+        if number == 0 {
+            return "-"
+        }
+        let g: Float = Float(number) / 1000.0
+        return String(format: "%.1fk", g)
+    }
 }
