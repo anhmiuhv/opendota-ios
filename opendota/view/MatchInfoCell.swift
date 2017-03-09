@@ -18,6 +18,7 @@ class MatchInfoCell: UITableViewCell {
     @IBOutlet weak var kda: KDAindicator!
     @IBOutlet weak var duration: UILabel!
     @IBOutlet weak var mode: UILabel!
+    var info: MatchInfo?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +32,7 @@ class MatchInfoCell: UITableViewCell {
     }
 
     func configCell(with info: MatchInfo){
+        self.info = info
         if (info.win){
             result.text = "Win"
             result.textColor = UIColor.green

@@ -23,4 +23,9 @@ extension Int {
         }
         return f
     }
+
+    static func toNetWorth(number: Int) -> String{
+        let g: Float = Float(number) / 1000.0
+        return String(format: "%.1fk", g)
+    }
 }

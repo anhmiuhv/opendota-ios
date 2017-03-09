@@ -9,6 +9,9 @@
 import Foundation
 import Gloss
 
+enum InMatchPlayerView {
+    case overview, farm, damage, item
+}
 struct InMatchPlayer: Decodable {
     let id: Int64?
     let player_slot: Int?

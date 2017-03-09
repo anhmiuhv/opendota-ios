@@ -1,14 +1,15 @@
 //
-//  ItemsTest.swift
+//  UtilityTest.swift
 //  opendota
 //
-//  Created by Linh Hoang on 1/26/17.
+//  Created by Linh Hoang on 3/8/17.
 //  Copyright © 2017 Linh Hoang. All rights reserved.
 //
 
 import XCTest
 @testable import opendota
-class ItemsTest: XCTestCase {
+
+class UtilityTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,12 +22,8 @@ class ItemsTest: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let items = Items.info
-        for i in items.list {
-            print(i.key)
-        }
+        XCTAssertEqual(Int.toNetWorth(number: 10600), "10.6k")
+
     }
     
     func testPerformanceExample() {

@@ -11,7 +11,7 @@ import XCTest
 
 class MatchTest: XCTestCase {
 
-    var match: Match =  Match()
+    var match: Match =  Match(id: 2857204600)
     var players :[InMatchPlayer] = []
     override func setUp() {
         super.setUp()

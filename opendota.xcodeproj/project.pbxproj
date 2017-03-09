@@ -11,6 +11,7 @@
 		38D68A0685858112B8F5021D /* Pods_opendotaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9954ADC5D9E1A585041AE8D /* Pods_opendotaTests.framework */; };
 		BD02E7031E6D3FE300E5103A /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02E7021E6D3FE300E5103A /* OptionViewController.swift */; };
 		BD0A01E21E6CBA750007ECFD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD0A01E11E6CBA740007ECFD /* Settings.bundle */; };
+		BD6AB3831E70EB8B00439090 /* UtilityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6AB3821E70EB8B00439090 /* UtilityTest.swift */; };
 		BD6E65501E19762E00A2DB7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E654F1E19762E00A2DB7F /* AppDelegate.swift */; };
 		BD6E65521E19762E00A2DB7F /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E65511E19762E00A2DB7F /* MatchViewController.swift */; };
 		BD6E65551E19762F00A2DB7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6E65531E19762F00A2DB7F /* Main.storyboard */; };
@@ -147,6 +148,7 @@
 		BD8B82751E6E6B9C00842D3C /* SlideInAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B82741E6E6B9C00842D3C /* SlideInAnimator.swift */; };
 		BD8B82771E6F5CB500842D3C /* SlideOutAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B82761E6F5CB500842D3C /* SlideOutAnimator.swift */; };
 		BD8B827A1E6F663A00842D3C /* MatchInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B82791E6F663A00842D3C /* MatchInfoViewController.swift */; };
+		BD8B827C1E6F6FA800842D3C /* DetailedMatchInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8B827B1E6F6FA800842D3C /* DetailedMatchInfoCell.swift */; };
 		BDA6EC751E3B1FD700F33040 /* list_items.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDA6EC731E3B1FD700F33040 /* list_items.txt */; };
 		BDA6EC761E3B1FD700F33040 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = BDA6EC741E3B1FD700F33040 /* items.json */; };
 		BDBA2E8C1E39BFB70059AF66 /* glimmer_cape_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = BDBA2DE91E39BFB60059AF66 /* glimmer_cape_lg.png */; };
@@ -346,6 +348,7 @@
 		B9954ADC5D9E1A585041AE8D /* Pods_opendotaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opendotaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD02E7021E6D3FE300E5103A /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		BD0A01E11E6CBA740007ECFD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		BD6AB3821E70EB8B00439090 /* UtilityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityTest.swift; sourceTree = "<group>"; };
 		BD6E654C1E19762E00A2DB7F /* opendota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opendota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6E654F1E19762E00A2DB7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6E65511E19762E00A2DB7F /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
@@ -488,6 +491,7 @@
 		BD8B82741E6E6B9C00842D3C /* SlideInAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInAnimator.swift; sourceTree = "<group>"; };
 		BD8B82761E6F5CB500842D3C /* SlideOutAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimator.swift; sourceTree = "<group>"; };
 		BD8B82791E6F663A00842D3C /* MatchInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchInfoViewController.swift; sourceTree = "<group>"; };
+		BD8B827B1E6F6FA800842D3C /* DetailedMatchInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailedMatchInfoCell.swift; path = view/DetailedMatchInfoCell.swift; sourceTree = "<group>"; };
 		BDA6EC731E3B1FD700F33040 /* list_items.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = list_items.txt; path = data/list_items.txt; sourceTree = "<group>"; };
 		BDA6EC741E3B1FD700F33040 /* items.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = items.json; path = data/items.json; sourceTree = "<group>"; };
 		BDBA2DE91E39BFB60059AF66 /* glimmer_cape_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = glimmer_cape_lg.png; path = item_image/glimmer_cape_lg.png; sourceTree = "<group>"; };
@@ -750,6 +754,7 @@
 				BD6E65661E19762F00A2DB7F /* Info.plist */,
 				BD7E396C1E39AE7E0089F201 /* MatchTest.swift */,
 				BDBA2F381E39C6CD0059AF66 /* ItemsTest.swift */,
+				BD6AB3821E70EB8B00439090 /* UtilityTest.swift */,
 			);
 			path = opendotaTests;
 			sourceTree = "<group>";
@@ -795,6 +800,7 @@
 				BD7641B71E1B3A3600A6DFA2 /* MatchInfoCell.swift */,
 				BD7642A01E1C88E700A6DFA2 /* ProfileCell.swift */,
 				BDCF53A71E1DBCB10009C148 /* KDAindicator.swift */,
+				BD8B827B1E6F6FA800842D3C /* DetailedMatchInfoCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -1696,6 +1702,7 @@
 			files = (
 				BDCF53A21E1D6A6B0009C148 /* LoginViewController.swift in Sources */,
 				BDC0A3751E1ADF1500098194 /* MatchFilter.swift in Sources */,
+				BD8B827C1E6F6FA800842D3C /* DetailedMatchInfoCell.swift in Sources */,
 				BD8B82771E6F5CB500842D3C /* SlideOutAnimator.swift in Sources */,
 				BD6E65521E19762E00A2DB7F /* MatchViewController.swift in Sources */,
 				BD6E65811E1990C400A2DB7F /* Match.swift in Sources */,
@@ -1723,6 +1730,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6AB3831E70EB8B00439090 /* UtilityTest.swift in Sources */,
 				BD6E65651E19762F00A2DB7F /* opendotaTests.swift in Sources */,
 				BDBA2F391E39C6CD0059AF66 /* ItemsTest.swift in Sources */,
 				BD7E396D1E39AE7E0089F201 /* MatchTest.swift in Sources */,

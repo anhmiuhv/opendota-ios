@@ -13,8 +13,8 @@ import Alamofire
 class Match {
     let info: MatchInfo? = nil
     let id: Int64
-    init (){
-        self.id = 2857204600
+    init (id: Int64){
+        self.id = id
 
     }
 

@@ -91,6 +91,7 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         if (indexPath.row == 0) {
             let cell = table
                 .dequeueReusableCell(withIdentifier: "profile", for: indexPath) as! ProfileCell
+
             if receiveWinLose {
                 cell.configCellForWinLose(with: player!)
             }
@@ -103,6 +104,10 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         let cell = table
             .dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MatchInfoCell
+
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor(red: 86/255, green: 48/255, blue: 68/255, alpha: 1)
+        }
         cell.configCell(with: matches[indexPath.row - 1 + (currentPage - 1) * 10])
         return cell
     }
@@ -203,11 +208,28 @@ class MatchViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
 
     @IBAction func returnToMatches(unwindSegue: UIStoryboardSegue){
-        unwindSegue.source.transitioningDelegate = unwindSegue.source as? UIViewControllerTransitioningDelegate
+        if unwindSegue.identifier == "option" {
+            unwindSegue.source.transitioningDelegate = unwindSegue.source as? UIViewControllerTransitioningDelegate
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        segue.destination.transitioningDelegate = self
+        if segue.identifier == "option" {
+            segue.destination.transitioningDelegate = self
+        }
+
+        if segue.identifier == "detail" {
+            let des = segue.destination as! MatchInfoViewController
+            let s = sender as! MatchInfoCell
+            des.match = Match(id: s.info!.id!)
+        }
+    }
+
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "detail" {
+            return true
+        }
+        return true
     }
 
 
