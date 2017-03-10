@@ -7,4 +7,5 @@ iOs app for opendota
 * Show your profiles, winrate, and MMR
 
 <img src="https://raw.githubusercontent.com/anhmiuhv/opendota-ios/master/IMG_1118.PNG" width="200" />
+<img src="https://raw.githubusercontent.com/anhmiuhv/opendota-ios/master/IMG_1122.PNG" width="200" />
 

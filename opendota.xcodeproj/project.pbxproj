@@ -317,6 +317,9 @@
 		BDCF53A21E1D6A6B0009C148 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF53A11E1D6A6B0009C148 /* LoginViewController.swift */; };
 		BDCF53A41E1D6B5B0009C148 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF53A31E1D6B5B0009C148 /* WebViewController.swift */; };
 		BDCF53A81E1DBCB10009C148 /* KDAindicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCF53A71E1DBCB10009C148 /* KDAindicator.swift */; };
+		BDD6B6991E72443F001B4FC2 /* InMatchPlayerTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6B6981E72443F001B4FC2 /* InMatchPlayerTableDelegate.swift */; };
+		BDD6B69B1E72692B001B4FC2 /* GraphInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6B69A1E72692B001B4FC2 /* GraphInfoController.swift */; };
+		BDD6B69D1E7269A1001B4FC2 /* SlideInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6B69C1E7269A1001B4FC2 /* SlideInDelegate.swift */; };
 		D3D8750F6108E1284CAB9BF7 /* Pods_opendota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68140A27FF1B8229F2B91D7F /* Pods_opendota.framework */; };
 /* End PBXBuildFile section */
 
@@ -660,6 +663,9 @@
 		BDCF53A11E1D6A6B0009C148 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BDCF53A31E1D6B5B0009C148 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BDCF53A71E1DBCB10009C148 /* KDAindicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDAindicator.swift; sourceTree = "<group>"; };
+		BDD6B6981E72443F001B4FC2 /* InMatchPlayerTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InMatchPlayerTableDelegate.swift; sourceTree = "<group>"; };
+		BDD6B69A1E72692B001B4FC2 /* GraphInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphInfoController.swift; sourceTree = "<group>"; };
+		BDD6B69C1E7269A1001B4FC2 /* SlideInDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideInDelegate.swift; sourceTree = "<group>"; };
 		D67EA09DFC88ED462A91FC9A /* Pods_opendotaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opendotaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -931,6 +937,7 @@
 				BD8B82711E6E5B3700842D3C /* SlideInController.swift */,
 				BD8B82741E6E6B9C00842D3C /* SlideInAnimator.swift */,
 				BD8B82761E6F5CB500842D3C /* SlideOutAnimator.swift */,
+				BDD6B69C1E7269A1001B4FC2 /* SlideInDelegate.swift */,
 			);
 			name = animator;
 			path = segue;
@@ -944,6 +951,8 @@
 				BDCF53A31E1D6B5B0009C148 /* WebViewController.swift */,
 				BD02E7021E6D3FE300E5103A /* OptionViewController.swift */,
 				BD8B82791E6F663A00842D3C /* MatchInfoViewController.swift */,
+				BDD6B6981E72443F001B4FC2 /* InMatchPlayerTableDelegate.swift */,
+				BDD6B69A1E72692B001B4FC2 /* GraphInfoController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -1714,6 +1723,8 @@
 				BD8B827A1E6F663A00842D3C /* MatchInfoViewController.swift in Sources */,
 				BDBA2F331E39C0CC0059AF66 /* Items.swift in Sources */,
 				BD6E65851E19921600A2DB7F /* Heroes.swift in Sources */,
+				BDD6B6991E72443F001B4FC2 /* InMatchPlayerTableDelegate.swift in Sources */,
+				BDD6B69D1E7269A1001B4FC2 /* SlideInDelegate.swift in Sources */,
 				BD76429F1E1B57C000A6DFA2 /* MatchInfo.swift in Sources */,
 				BDCF53A81E1DBCB10009C148 /* KDAindicator.swift in Sources */,
 				BD7641B81E1B3A3600A6DFA2 /* MatchInfoCell.swift in Sources */,
@@ -1722,6 +1733,7 @@
 				BD7E39691E39A1220089F201 /* InMatchPlayer.swift in Sources */,
 				BD7641BA1E1B457800A6DFA2 /* Constants.swift in Sources */,
 				BD76DFE11E6CE25E0041F80A /* Utility.swift in Sources */,
+				BDD6B69B1E72692B001B4FC2 /* GraphInfoController.swift in Sources */,
 				BD8B82751E6E6B9C00842D3C /* SlideInAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

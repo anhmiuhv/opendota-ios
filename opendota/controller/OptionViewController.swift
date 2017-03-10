@@ -13,7 +13,7 @@ class OptionViewController: UIViewController {
     let slideoutAnimator = SlideOutAnimator()
 
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
     }
 
 }

@@ -9,6 +9,7 @@ target 'opendota' do
   pod 'Gloss', '~> 1.1'
   pod 'Alamofire'
   pod 'Kanna'
+  pod 'Charts'
   target 'opendotaTests' do
     inherit! :search_paths
     # Pods for testing

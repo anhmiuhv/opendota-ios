@@ -10,99 +10,60 @@ import Foundation
 import UIKit
 import QuartzCore
 
-class MatchInfoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var mode: InMatchPlayerView = .overview
+class MatchInfoViewController: UIViewController {
+    var mode: InMatchPlayerView = .overview {
+        didSet {
+            self.tableDelegate.mode = self.mode
+        }
+    }
     var match: Match?
-    var receivedMatch = false
-
+    @IBOutlet weak var duration: UILabel!
+    @IBOutlet weak var dire: UILabel!
+    @IBOutlet weak var radiant: UILabel!
+    var tableDelegate = InMatchPlayerTableDelegate()
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var buttons: UIStackView!
 
+    @IBOutlet var v: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.table.delegate = tableDelegate
+        self.table.dataSource = tableDelegate
         match?.getMatchInfo {
-            self.receivedMatch = true
+            self.tableDelegate.receivedMatch = true
+            self.tableDelegate.match = self.match
             self.table.reloadData()
+            self.duration.text = Int.toTime(number: (self.match?.duration!)!)
+            self.dire.text = "\((self.match?.dire_score!)!)"
+            self.radiant.text = "\((self.match?.radiant_score!)!)"
+            if self.match!.radiant_win! {
+                self.radiant.text! += "🏆"
+            } else {
+                self.dire.text! += "🏆"
+            }
+
         }
+        
         let exitGestureDetector = UISwipeGestureRecognizer(target: self, action: #selector(exitDetail))
-        exitGestureDetector.direction = UISwipeGestureRecognizerDirection.down
-        self.view.addGestureRecognizer(exitGestureDetector)
+        exitGestureDetector.direction = .down
+        self.v.addGestureRecognizer(exitGestureDetector)
+
+        let graph = UISwipeGestureRecognizer(target: self, action: #selector(showGraph))
+        graph.direction = .left
+        self.v.addGestureRecognizer(graph)
+
         buttons.arrangedSubviews[0].layer.borderWidth = 1
         buttons.arrangedSubviews[0].layer.borderColor = UIColor.white.cgColor
-    }
-
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
-    }
-
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-
-            return "Radiant"
-        } else {
-            return "Dire"
-        }
-    }
-
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        if section == 1 {
-            view.tintColor = UIColor.red
-            let header = view as! UITableViewHeaderFooterView
-            header.textLabel?.textColor = UIColor.red
-        } else {
-            view.tintColor = UIColor.green
-            let header = view as! UITableViewHeaderFooterView
-            header.textLabel?.textColor = UIColor.green
-        }
-    }
-
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        if section == 0 {
-            return 35
-        }
-        return 20
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: DetailedMatchInfoCell
-
-        switch mode {
-        case .overview:
-            cell = table
-                .dequeueReusableCell(withIdentifier: "overview", for: indexPath) as! OverviewMatchInfoCell
-        case .farm:
-            cell=table.dequeueReusableCell(withIdentifier: "farm", for: indexPath) as! FarmMatchInfoCell
-
-        case .damage:
-            cell = table.dequeueReusableCell(withIdentifier: "damage", for: indexPath) as! DamageMatchInfoCell
-        default:
-            return UITableViewCell()
-
-        }
-        if receivedMatch {
-            var delta = 0
-            if indexPath.section == 1 {
-                delta = 5
-            }
-            cell.configCell(with: (match?.players?[indexPath.row + delta])!)
-        }
-        if indexPath.row % 2 == 1 && indexPath.section == 0 {
-            cell.backgroundColor = UIColor(red: 142/255, green: 183/255, blue: 139/255, alpha: 0.5)
-        } else if indexPath.row % 2 == 1 && indexPath.section == 1 {
-            cell.backgroundColor = UIColor(red: 211/255, green: 162/255, blue: 162/255, alpha: 0.5)
-        }
-        return cell
-
     }
 
     func exitDetail() {
         self.performSegue(withIdentifier: "matches", sender: nil)
     }
 
+    func showGraph() {
+        self.performSegue(withIdentifier: "graph", sender: nil)
+    }
+    
     @IBAction func changeMode(_ sender: UIButton) {
         for b in buttons.arrangedSubviews {
             b.layer.borderWidth = 0
@@ -124,6 +85,19 @@ class MatchInfoViewController: UIViewController, UITableViewDelegate, UITableVie
         sender.layer.borderWidth = 1
         sender.layer.borderColor = UIColor.white.cgColor
         self.table.reloadData()
+    }
+
+    @IBAction func changeSide(unwindSegue: UIStoryboardSegue){
+        
+    }
+    
+    var trans = SlideOutDelegate()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "graph" {
+            segue.destination.modalPresentationStyle = .custom
+            segue.destination.transitioningDelegate = trans
+        }
+        
     }
 
 
