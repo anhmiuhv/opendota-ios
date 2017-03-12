@@ -2,3 +2,5 @@ language: objective-c
 xcode_workspace: opendota.xcworkspace # path to your xcodeproj folder
 xcode_scheme: opendota
 osx_image: xcode8.2
+script:
+	xcodebuild test -workspace opendota.xcworkspace -scheme opendota -destination "platform=iOS Simulator,OS=10.1,name=iPhone 7"
